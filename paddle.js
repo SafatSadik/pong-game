@@ -1,4 +1,4 @@
-const SPEED = 0.09
+const SPEED = 0.05
 const randomValue =  Math.random() * 100
 export default class Paddle{
     constructor(paddleElem){
@@ -24,4 +24,5 @@ export default class Paddle{
     rect(){
         return this.paddleElem.getBoundingClientRect()
     }
+
 }
