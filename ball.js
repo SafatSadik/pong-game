@@ -1,5 +1,5 @@
-const INITIAL_VELOCITY = 0.025
-const VELOCITY_INCREASE = 0.00001
+const INITIAL_VELOCITY = 0.03
+const VELOCITY_INCREASE = 0.000001
 
 export default class Ball{
     constructor(ballElem){
@@ -70,4 +70,5 @@ function isCollision(rect1 , rect2){
 
 function randomNumberBeetwen(min,max){
     return Math.random() * (max - min) + min;
+
 }
