@@ -1,5 +1,5 @@
 const INITIAL_VELOCITY = 0.03
-const VELOCITY_INCREASE = 0.000001
+const VELOCITY_INCREASE = 0.00001
 
 export default class Ball{
     constructor(ballElem){
@@ -72,3 +72,4 @@ function randomNumberBeetwen(min,max){
     return Math.random() * (max - min) + min;
 
 }
+
