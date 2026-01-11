@@ -1,4 +1,4 @@
-const SPEED = 0.05
+const SPEED = 0.04
 const randomValue =  Math.random() * 100
 export default class Paddle{
     constructor(paddleElem){
@@ -26,3 +26,4 @@ export default class Paddle{
     }
 
 }
+
