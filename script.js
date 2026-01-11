@@ -42,11 +42,21 @@ function isLose(){
 }
 
 //changing the position of player paddle
-document.addEventListener('pointermove', (e) => {
+// Desktop
+document.addEventListener('mousemove', (e) => {
     playerPaddle.position = (e.clientY / window.innerHeight) * 100;
 });
+
+// Mobile
+document.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+
+    const touchY = e.touches[0].clientY;
+    playerPaddle.position = (touchY / window.innerHeight) * 100;
+}, { passive: false });
 
 
 //on change of the screen frame this function will be called 1 time 
 
 window.requestAnimationFrame(update)
+
